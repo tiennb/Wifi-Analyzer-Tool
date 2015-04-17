@@ -13,7 +13,6 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.apps.nbt.wifianalyzertool.R;
 import com.apps.nbt.wifianalyzertool.adapter.WifiFragmentAdapter;
@@ -84,7 +83,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         //Timer
         timer = new Timer();
         autoWifiScanner = new AutoWifiScanner();
-        timer.scheduleAtFixedRate(autoWifiScanner, 0, 5000);
+        timer.scheduleAtFixedRate(autoWifiScanner, 0, 10000); //auto scan 10s
 
     }
 
@@ -120,8 +119,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         return fList;
     }
-
-
     private class AutoWifiScanner extends TimerTask {
         @Override
         public void run() {
@@ -139,17 +136,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
             switch (msg.what) {
                 case ConstUtil.SCAN_RESULTS_AVAILABLE_ACTION:
-                    wifiScanList = wifiManager.getScanResults();
-//
-//                    lst.get(0).
-//
-//                    mAdapter.notifyDataSetChanged();
-
-                    Toast.makeText(MainActivity.this, wifiScanList.get(0).SSID, Toast.LENGTH_SHORT).show();
+//                    wifiScanList = wifiManager.getScanResults();
 
                     break;
                 case ConstUtil.AUTO_SCAN_TIMER:
-                    wifiManager.startScan();
+//                    wifiManager.startScan();
                     break;
                 default:
                     break;

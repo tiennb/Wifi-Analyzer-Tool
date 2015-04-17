@@ -1,19 +1,17 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+
     tools:context="com.apps.nbt.wifianalyzertool.fagment.ListWifiScannerFragment">
 
-   <ListView
-       android:id="@+id/lstWifi"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"></ListView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_gravity="left|top" />
+    <ListView
+        android:id="@+id/lstWifi"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_rounded_coner_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 </FrameLayout>
