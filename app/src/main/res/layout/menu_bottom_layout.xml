@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="48dp">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbxTurnWifi"
+        android:layout_centerVertical="true"
+        android:button="@drawable/btn_turn_wifi_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:checked="false"></CheckBox>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imvReload"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_reload"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"></ImageView>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imvAddWifi"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_add_wifi"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"></ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="1px"
+        android:background="#c8c7cc"></View>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color default -->
+    <color name="white">#ffffff</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000ff</color>
+
+    <color name="txt_menu_color">#0000ff</color>
+</resources>
