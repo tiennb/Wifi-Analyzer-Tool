@@ -125,7 +125,7 @@ public class ListWifiScannerFragment extends Fragment {
 
     }
 
-    public void updateList (){
+    public void updateList() {
 
     }
 
@@ -161,7 +161,6 @@ public class ListWifiScannerFragment extends Fragment {
     }
 
 
-
     private class AutoWifiScanner extends TimerTask {
         @Override
         public void run() {
@@ -182,7 +181,7 @@ public class ListWifiScannerFragment extends Fragment {
                     wifiScanList = wifiManager.getScanResults();
                     mListWifiConnectors.clear();
 
-                    for (ScanResult result: wifiScanList){
+                    for (ScanResult result : wifiScanList) {
                         WifiConnector wifi = new WifiConnector();
                         wifi.setWifiName(result.SSID);
 

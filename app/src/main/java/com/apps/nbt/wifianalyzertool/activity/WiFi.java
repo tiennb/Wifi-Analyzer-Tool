@@ -16,8 +16,27 @@ public class WiFi {
     private String vendor;
     private int noiseSignal; //min signal
     private int SNR; //Singal-to-Noise ratio
+    private int distance;
+    private int angle; // random
 
     //Get
+
+    public int getAngle() {
+        return angle;
+    }
+
+    public void setAngle(int angle) {
+        this.angle = angle;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
     public String getWifiName() {
         return wifiName;
     }

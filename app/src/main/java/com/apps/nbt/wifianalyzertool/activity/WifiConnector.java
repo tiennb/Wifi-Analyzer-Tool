@@ -5,17 +5,26 @@ package com.apps.nbt.wifianalyzertool.activity;
  */
 public class WifiConnector extends WiFi {
 
-    private String IPAdress;
+    private String IPAddress;
     private String subnetMark;
     private String defaultGateway;
     private String linkSpeed;
+    private boolean isConnected;
 
-    public String getIPAdress() {
-        return IPAdress;
+    public boolean isConnected() {
+        return isConnected;
     }
 
-    public void setIPAdress(String IPAdress) {
-        this.IPAdress = IPAdress;
+    public void setConnected(boolean isConnected) {
+        this.isConnected = isConnected;
+    }
+
+    public String getIPAddress() {
+        return IPAddress;
+    }
+
+    public void setIPAddress(String IPAddress) {
+        this.IPAddress = IPAddress;
     }
 
     public String getSubnetMark() {

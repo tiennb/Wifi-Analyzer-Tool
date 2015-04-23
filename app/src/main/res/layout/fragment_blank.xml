@@ -1,10 +1,21 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/txt_menu_color"
+    android:layout_centerInParent="true"
     tools:context="com.apps.nbt.wifianalyzertool.fagment.BlankFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_radar"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+    <com.apps.nbt.wifianalyzertool.fagment.RadarView
+        android:id="@+id/radarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</FrameLayout>
+</RelativeLayout>

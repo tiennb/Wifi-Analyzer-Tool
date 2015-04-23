@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.apps.nbt.wifianalyzertool.R;
 import com.apps.nbt.wifianalyzertool.adapter.WifiFragmentAdapter;
+import com.apps.nbt.wifianalyzertool.fagment.BlankFragment;
 import com.apps.nbt.wifianalyzertool.fagment.ListWifiScannerFragment;
 import com.apps.nbt.wifianalyzertool.utility.ConstUtil;
 import com.viewpagerindicator.IconPageIndicator;
@@ -115,6 +116,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private List<Fragment> getFragments(String name) {
         List<Fragment> fList = new ArrayList<Fragment>();
 
+        fList.add(BlankFragment.newInstance(name, ""));
         fList.add(ListWifiScannerFragment.newInstance(name, ""));
 
         return fList;
